@@ -27,8 +27,18 @@ I conducted a benchmark to compare memory usages between different shimmer imple
 # Download and usage
 
 Get the latest artifact via gradle
+
 ```groovy
-implementation 'io.supercharge:shimmerlayout:2.1.0'
+allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+
+```groovy
+implementation 'com.github.BenMacha:ShimmerLayout:1.0.0'
 ```
 
 Create the layout on which you want to apply the effect and add as a child of a `ShimmerLayout`
